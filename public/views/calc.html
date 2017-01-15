@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>BitHedge</title>
+  <meta name="description" content="">
+  <meta name="author" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="css/style.css">
+  <link rel="stylesheet" media="screen" href="css/main.css">
+</head>
+<body>
+
+<header id="header">
+  <h1>BIT</h1>
+  <nav>
+    <ul>
+      <li><a href="case.html">Case Studies</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- particles.js container -->
+<div id="particles-js">
+
+  <center><div class="roww" ng-app="">
+    <div>
+      <br /><br /><br />
+     <h2>How much Bitcoin should you own?</h2>
+     {{ message }}
+     <p id="btc"></p>
+    </div>
+    <div class="span9">
+      <div class="row controls">
+        <form ng-submit="send()">
+          <div class="span2"><input type="text" class="input-block-level" style="width:30%;" ng-model="wealth" placeholder="Enter Your Wealth"></div>
+          <div class="input-append span7">
+              <h1>{{wealth}}</h1>
+              <br />
+            <button class="span1 btn btn-primary" ng-submit="Calculate()">Calculate</button>
+              <br />
+              <pre>BTI={{BTCAmount}}</pre>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div></center>
+
+</div>
+
+<!-- Footer -->
+<footer id="footer">
+
+  <!-- Menu -->
+    <ul class="menu">
+      <li>&copy; BIT</li><li>Miami Bitcoin Hackathon</li>
+    </ul>
+
+</footer>
+
+<!-- scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.9/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.9/angular-route.js"></script>
+<script src="../particles.js"></script>
+<script src="js/app.js"></script>
+<script src="js/price.js"></script>
+<script src="js/convert.js"></script>
+<script src="server.js"></script>
+<script src="routes/index.js"></script>
+
+
+
+
+</body>
+</html>
